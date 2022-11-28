@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Nunito:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style_task5.css">
+    <link rel="shortcut icon" href="pictures/flower_icon.png">
+</head>
+<body>
+    <div class="container1">
+        <div><h1>Калькулятор вартості букету квітів</h1></div>
+            <div class="blocks">
+                <div class="container2">
+                    <div class="options">
+                        <div><h2> Оберіть квіти: </h2>
+                            <select id="FlowerOptions">
+                                <option value="90" id="90">Троянда (90 UAH / шт)</option>
+                                <option value="85" id="85">Лілія (85 UAH / шт)</option>
+                                <option value="70" id="70">Тюльпан (70 UAH / шт)</option>
+                                <option value="75" id="75">Гортензія (75 UAH / шт)</option>
+                            </select>
+                        </div>
+                        <div><h2> Введіть кількість квітів:</h2><input id="quantity" value="" autocomplete="off" min="1"></div>
+                        <div><h2> Додаткові елементи: </h2>
+                            <select id="ElementOptions">
+                                    <option value="10" id="10">Листівка з побажанням (10 UAH)</option>
+                                    <option value="60" id="60">Крафтові цукерки (60 UAH)</option>
+                                    <option value="0" id="0">Без додаткових елементів</option>
+                            </select>
+                        </div>
+                        <div><h2> Тип обгортки:</h2>
+                            <select id="PackageOptions">
+                                    <option value="10" id="10">Паперова (10 UAH)</option>
+                                    <option value="40" id="40">Пластикова (40 UAH)</option>
+                                    <option value="60" id="60">Коробка (60 UAH)</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="bouquet">
+                        <div class="b_animation">
+                            <p><img src="pictures/1.png"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container3">
+                <div><button type="button" onclick="calculatePrice()">Розрахувати</button></div>
+                <div class="result">
+                    <div><h2> Розрахована вартість букету: <script src="js/calc_task5.js"></script></h2></div>
+                    <div><h2 id="price"></h2></div>
+                </div>
+            </div>
+    </div>
+</body>
